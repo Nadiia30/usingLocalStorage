@@ -43,5 +43,6 @@ searchForm.addEventListener('submit', () => {
 
 clearButton.addEventListener('click', () => {
   //remove searches 
+  localStorage.removeItem("recentSearches");
   recentSearchList.innerHTML = '';
 });
