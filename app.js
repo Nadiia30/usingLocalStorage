@@ -36,6 +36,7 @@ searchForm.addEventListener('submit', () => {
 
   searches.push(searchString) 
   // Set local storage item
+  localStorage.setItem("recentSearches", JSON.stringify(searches));
   createItem(searchString);
 });
 
