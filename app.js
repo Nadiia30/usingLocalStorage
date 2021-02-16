@@ -9,6 +9,7 @@ createStorageList();
 // Retrieve searches from Local Storage, return an array
 function getRecentSearches() {
   //get recent searches from localStorage
+  const searches = localStorage.getItem("recentSearches");
   if (searches) {
     return JSON.parse(searches);
   }
